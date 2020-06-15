@@ -9,7 +9,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=/Users/binarymonster/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -103,6 +103,10 @@ source .teja_profile
 
 if [ -f ~/.teja_profile ]; then
 . ~/.teja_profile
+fi
+
+if [ -f ~/.aliases ]; then
+. ~/.aliases
 fi
 
 autoload -U +X bashcompinit && bashcompinit
